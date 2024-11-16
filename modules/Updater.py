@@ -11,7 +11,7 @@ import platform
 
 def parse_update_json(json_path='', from_main=False):
     if json_path == '':
-        url = 'https://api.github.com/repos/rzc0d3r/ESET-KeyGen/releases'
+        url = 'https://api.github.com/repos/ElJoker63/ESET-KeyGen/releases'
         try:
             response = requests.get(url, timeout=3)
             update_json = response.json()
@@ -73,7 +73,7 @@ def download_and_extract(url, extract_to='.', force_zip=False):
         if force_zip or filename.endswith('.zip'):
             try:
                 with zipfile.ZipFile(filename, 'r') as zip_ref:
-                    extracted_folder_name = zip_ref.filelist[0].filename[0:-1] # rzc0d3r-ESET-KeyGen-56a2c5b/ -> rzc0d3r-ESET-KeyGen-56a2c5b
+                    extracted_folder_name = zip_ref.filelist[0].filename[0:-1] # ElJoker63-ESET-KeyGen-56a2c5b/ -> ElJoker63-ESET-KeyGen-56a2c5b
                     zip_ref.extractall(extract_to)
                 os.remove(filename)
                 console_log("Extraction completed successfully!", OK)
