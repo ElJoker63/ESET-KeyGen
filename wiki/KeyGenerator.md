@@ -1,7 +1,7 @@
 ## 1. How to generate multiple keys per run
 Add a command-line argument: ```--repeat {number}```
 
-```{number}``` - instead enter the number of keys from **1** to **10**
+```{number}``` - Instead, enter the number of keys
 
 ---
 
@@ -18,7 +18,7 @@ Add a command-line argument: ```--repeat {number}```
   python main.py --chrome --key
   ```
   ```
-  ESET-KeyGen_v1.5.2.3_win64.exe --chrome --key
+  ESET-KeyGen_v1.5.4.0_win64.exe --chrome --key
   ```
   > File name is unique for each version! Do not copy the above command. This is an example!
 
@@ -36,7 +36,7 @@ Add a command-line argument: ```--repeat {number}```
   python main.py --chrome --small-business-key
   ```
   ```
-  ESET-KeyGen_v1.5.2.3_win64.exe --chrome --small-business-key
+  ESET-KeyGen_v1.5.4.0_win64.exe --chrome --small-business-key
   ```
   > File name is unique for each version! Do not copy the above command. This is an example!
 
@@ -54,29 +54,29 @@ Add a command-line argument: ```--repeat {number}```
   python main.py --chrome --advanced-key
   ```
   ```
-  ESET-KeyGen_v1.5.2.3_win64.exe --chrome --advanced-key
+  ESET-KeyGen_v1.5.4.0_win64.exe --chrome --advanced-key
   ```
   > File name is unique for each version! Do not copy the above command. This is an example!
 
-  > **Works ONLY if you use the ```--custom-email-api``` argument or the following ```Email APIs```: ```mailticking```, ```fakemail```**
+  > **Works ONLY if you use the ```--custom-email-api``` argument or the following ```Email APIs```: ```mailticking```, ```fakemail```, ```inboxes```, ```incognitomail```**
 
   2. Wait until appears you will see *"Solve the captcha on the page manually!!!"*. Next, you will see a captcha with text input in the browser window created. You solve it and then just do nothing, the algorithm will do everything for you!
 
   3. Wait until you will see the license data
   > This information will also be written to a file named "Today date - ESET KEYS.txt"
 
-  ![Windows](https://github.com/ElJoker63636363/ESET-KeyGen/blob/main/img/endpoint_key_run_win.png)
+  ![Windows](https://github.com/ElJoker63/ESET-KeyGen/blob/main/img/endpoint_key_run_win.png)
 </details>
 
 <details>
   <summary>ESET VPN</summary>
   
-  1. Run main.py or executable file or use [MBCI](https://github.com/ElJoker63636363636363/ESET-KeyGen/blob/main/wiki/MBCI-Inferface.md):
+  1. Run main.py or executable file or use [MBCI](https://github.com/ElJoker63/ESET-KeyGen/blob/main/wiki/MBCI-Inferface.md):
   ```
   python main.py --chrome --vpn-codes
   ```
   ```
-  ESET-KeyGen_v1.5.2.3_win64.exe --chrome --vpn-codes
+  ESET-KeyGen_v1.5.4.0_win64.exe --chrome --vpn-codes
   ```
   > File name is unique for each version! Do not copy the above command. This is an example!
 
@@ -85,6 +85,8 @@ Add a command-line argument: ```--repeat {number}```
 
   ![Windows](https://github.com/ElJoker63/ESET-KeyGen/blob/main/img/vpn_codes_run_win.png)
 </details>
+
+---
 
 ## 3. Generation using your email provider
 
@@ -97,7 +99,7 @@ Add a command-line argument: ```--repeat {number}```
   python main.py --chrome --key --custom-email-api
   ```
   ```
-  ESET-KeyGen_v1.5.2.3_win64.exe --chrome --key --custom-email-api
+  ESET-KeyGen_v1.5.4.0_win64.exe --chrome --key --custom-email-api
   ```
   > File name is unique for each version! Do not copy the above command. This is an example!
 
@@ -107,7 +109,7 @@ Add a command-line argument: ```--repeat {number}```
   python main.py --chrome --small-business-key --custom-email-api
   ```
   ```
-  ESET-KeyGen_v1.5.2.3_win64.exe --chrome --small-business-key --custom-email-api
+  ESET-KeyGen_v1.5.4.0_win64.exe --chrome --small-business-key --custom-email-api
   ```
   > File name is unique for each version! Do not copy the above command. This is an example!
 
@@ -142,7 +144,7 @@ Add a command-line argument: ```--repeat {number}```
   python main.py --chrome --advanced-key --custom-email-api
   ```
   ```
-  ESET-KeyGen_v1.5.2.3_win64.exe --chrome --advanced-key --custom-email-api
+  ESET-KeyGen_v1.5.4.0_win64.exe --chrome --advanced-key --custom-email-api
   ```
   > File name is unique for each version! Do not copy the above command. This is an example!
 
@@ -185,7 +187,7 @@ Add a command-line argument: ```--repeat {number}```
   python main.py --chrome --vpn-codes --custom-email-api
   ```
   ```
-  ESET-KeyGen_v1.5.2.3_win64.exe --chrome --vpn-codes --custom-email-api
+  ESET-KeyGen_v1.5.4.0_win64.exe --chrome --vpn-codes --custom-email-api
   ```
   > File name is unique for each version! Do not copy the above command. This is an example!
 
@@ -217,3 +219,13 @@ Add a command-line argument: ```--repeat {number}```
   
   ![Windows](https://github.com/ElJoker63/ESET-KeyGen/blob/main/img/vpn_codes_message.png)
 </details>
+
+---
+
+## 4. Unbinding license key from ESET ProtectHub account
+Once the **ProtectHub** key has been successfully generated and obtained from the site, you can delete it from the created account (this will not affect the functionality of the key).
+This will allow you to bind the key to another **ProtectHub** account (sometimes this can be useful).
+
+To do this, enter ```Y``` to confirm and ```N``` to decline after the message appears in the console:
+
+![Windows](https://github.com/ElJoker63/ESET-KeyGen/blob/main/img/unbinding_protecthub_key.png)
