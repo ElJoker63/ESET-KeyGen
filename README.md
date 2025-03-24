@@ -6,7 +6,7 @@
   
   [![Commit activity](https://img.shields.io/github/commit-activity/t/ElJoker63/ESET-KeyGen/main?cacheSeconds=0)](https://github.com/ElJoker63/ESET-KeyGen/commits/main)
   ![Last commit](https://img.shields.io/github/last-commit/ElJoker63/ESET-KeyGen/main?cacheSeconds=0)
-  ![Last test](https://img.shields.io/badge/last_test-24.03.2025_04:28_UTC+3-blue)
+  ![Last test](https://img.shields.io/badge/last_test-24.03.2025_15:39_UTC+3-blue)
   [![Opened issues](https://img.shields.io/github/issues/ElJoker63/ESET-KeyGen?color=darkred)](https://github.com/ElJoker63/ESET-KeyGen/issues?cacheSeconds=0)
   [![Closed issues](https://img.shields.io/github/issues-closed/ElJoker63/ESET-KeyGen?color=darkgreen&cacheSeconds=0)](https://github.com/ElJoker63/ESET-KeyGen/issues?q=is%3Aissue+is%3Aclosed)
   ![License](https://img.shields.io/github/license/ElJoker63/ESET-KeyGen)
