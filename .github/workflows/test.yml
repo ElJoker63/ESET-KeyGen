@@ -5,6 +5,21 @@ on:
     - cron: '0 */12 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      mail:
+        description: 'Choose the mail provider'
+        required: true
+        type: choice
+        options:
+        - 1secmail
+        - guerrillamail
+        - developermail
+        - mailticking
+        - fakemail
+        - inboxes
+        - incognitomail
+        - emailfake
+        default: emailfake
 jobs:
   Test:
     runs-on: ubuntu-latest
@@ -18,13 +33,16 @@ jobs:
         run: |
           ACCOUNT=0
           KEY=1
-          SMALL_BUSINESS_KEY=0
-          VPN=1
-          EMAIL_API=guerrillamail
+          SMALL_BUSINESS_KEY=1
+          VPN=0
+          EMAIL_API="${{ github.event.inputs.mail }}"
+          if [ -z "$EMAIL_API" ]; then
+            EMAIL_API="emailfake"
+          fi
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git clone --depth 1 https://github.com/rzc0d3r/ESET-KeyGen.git
-          cd ESET-KeyGen
+          git clone --depth 1 https://github.com/shadowcopyrz/etkg.git
+          cd etkg
           # Setup env
           sudo apt update
           sudo apt install -y python3-pip python3-venv
@@ -70,7 +88,7 @@ jobs:
           echo 
           cd ${{ github.workspace }}
           sed -i 's/\(last_test-\)[0-9]\{2\}.[0-9]\{2\}.[0-9]\{4\}_[0-9]\{2\}:[0-9]\{2\}_UTC+3/\1'"$(date -u --date='3 hours' +"%d.%m.%Y_%H:%M_UTC+3")"'/' README.md
-          sudo rm -r ESET-KeyGen
+          sudo rm -r etkg
           git pull
           git commit -m "Update test time" -a
       - name: Push changes to the repo

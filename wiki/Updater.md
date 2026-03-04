@@ -32,10 +32,10 @@ You can also update the program with the ```--update``` argument, the logic is i
 You can update the program to the latest version by calling it with the command line argument ```--update```:
 
 ### Update when a binary file is available
-![Windows](https://github.com/rzc0d3r/ESET-KeyGen/blob/main/img/updater_binary_update.png)
+![Windows](../img/updater_binary_update.png)
 
 ### Update when no binary file is available
-![Windows](https://github.com/rzc0d3r/ESET-KeyGen/blob/main/img/updater_src_update.png)
+![Windows](../img/updater_src_update.png)
 
 Then the program itself will find the latest version and load it into the project folder.
 
@@ -49,10 +49,10 @@ Then the program itself will find the latest version and load it into the projec
 #### Without this argument, the program will always notify you when an update is available
 
 #### Notification when an update is available
-![Windows](https://github.com/rzc0d3r/ESET-KeyGen/blob/main/img/updater_available.png)
+![Windows](../img/updater_available.png)
 
 #### Notification when a project is updated to the latest version
-![Windows](https://github.com/rzc0d3r/ESET-KeyGen/blob/main/img/updater_uptodate.png)
+![Windows](../img/updater_uptodate.png)
 
 ---
 
